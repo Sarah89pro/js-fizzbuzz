@@ -36,14 +36,16 @@ var rest = 0;
 for (var i = 0; i < 100; i++) {
   numbers.push((i + 1));
   console.log(numbers);
-  if ((rest = numbers[i] % 3) == 0) {
+  
+  if (((rest = numbers[i] % 3) == 0) && ((rest = numbers[i] % 5) == 0)) {
+    numbers[i] = "FizzBuzz";
+  } 
+  else if ((rest = numbers[i] % 3) == 0) {
     numbers[i] = "Fizz";
   } 
   else if ((rest = numbers[i] % 5) == 0) {
     numbers[i] = "Buzz";
-  } 
-  else if (((rest = numbers[i] % 3) == 0) && ((rest = numbers[i] % 5) == 0)) {
-    numbers[i] = "FizzBuzz";
   }
   document.getElementById("result").innerHTML += " " + numbers[i] + " ";
 }*/
+
