@@ -7,14 +7,14 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.*/
 
 
 for (var i = 1; i <= 100; i++) {    //from 1 to 100
-    if ((i % 3) == 0) {         //se [i] / 3 = 0 --> Fizz
+    if ((i % 15) == 0) {   // se [i] / 15 (3*5) = 0 --> FizzBuzz
+        console.log("FizzBuzz");
+    } 
+    else if ((i % 3) == 0) {         //se [i] / 3 = 0 --> Fizz
         console.log("Fizz");
     } 
     else if ((i % 5) == 0) {    // se [i] / 5 = 0 --> Buzz
         console.log("Buzz");
-    } 
-    else if ((i % 15) == 0) {   // se [i] / 15 (3*5) = 0 --> FizzBuzz
-        console.log("FizzBuzz");
     } 
     else {                        // altrimenti [i] --> numero
         console.log(i);
